@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Joan&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Joan", serif;
+}
+
+body {
+    background-color: #1e1f26;
+    color: #adadad;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(30, 31, 38, 0.9));
+    border-bottom: 2px solid #cd8c38;
+}
+
+.left-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.h2.title {
+    font-size: 2rem;
+    color: #ec9017;
+}
+
+.navigation {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.navigation li a {
+    color: #cb1919;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navigation li a:hover,
+.navigation li a.active {
+    color: #cd8c38;
+}
+
+/* Right Section Icons */
+.right-content {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.profile-img-box {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Main Container */
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 2rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Sidebar */
+.sidebar {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(205, 140, 56, 0.15));
+    padding: 1.5rem;
+    border-radius: 1rem;
+    color: #cd8c38;
+}
+
+.sidebar input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.sidebar .btn-1 {
+    display: block;
+    text-align: center;
+    background-color: #cd8c38;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .btn-1:hover {
+    background-color: #8b5c1f;
+}
+
+/* Upcoming Movies Section */
+.upcoming-img-box {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    height: 300px;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('./assets/images/upcoming.png') center/cover no-repeat;
+}
+
+.upcoming-title {
+    position: absolute;
+    top: 1rem;
+    left: 1.5rem;
+    color: #cd8c38;
+    background-color: rgba(30, 31, 38, 0.8);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 1px solid #db881b;
+    font-size: 1.2rem;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons .btn {
+    background-color: #cd8c38;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.buttons .btn-alt {
+    background-color: #ec9017;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.buttons .btn:hover,
+.buttons .btn-alt:hover {
+    background-color: #8b5c1f;
+}
+
+/* Current Movies Section */
+.current-movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.current-movie {
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.05), rgba(205, 140, 56, 0.15));
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.cm-img-box {
+    width: 100%;
+    height: 150px;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.cm-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.movie-title {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+    color: #cd8c38;
+}
+
+.screen-name {
+    font-size: 0.9rem;
+    color: #adadad;
+}
+
+.booking {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: #ec9017;
+}
+
+.booking .btn {
+    background-color: #cd8c38;
+    padding: 0.5rem 1rem;
+    border-radius: 0.8rem;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.booking .btn:hover {
+    background-color: #8b5c1f;
+}
